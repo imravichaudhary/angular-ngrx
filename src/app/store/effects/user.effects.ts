@@ -16,7 +16,7 @@ import { UserService } from '../../services/user.service';
 import { IUserHttp } from '../../models/http-models/user-http.interface';
 import { selectUserList } from '../selectors/user.selectors';
 
-@Injectable
+@Injectable()
 export class UserEffects {
     @Effect()
     getUser$ = this._actions$.pipe(
