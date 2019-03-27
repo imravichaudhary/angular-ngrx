@@ -1,1 +1,5 @@
-<app-users [users]="users$ | async" (userSelected)="navigateToUser($event)"></app-users>
+<br />
+{{users$ | async | json}}
+    <!--
+(userSelected)="navigateToUser($event)"
+    -->
